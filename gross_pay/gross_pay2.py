@@ -4,7 +4,6 @@ def computepay(hours, rate):
     else:
         return hours * rate
 
-
 hours = input("Enter hours: ")
 rate = input("Enter rate: ")
 
