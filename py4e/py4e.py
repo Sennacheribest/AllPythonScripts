@@ -8,6 +8,7 @@ for line in fhand:
         line = line.rstrip()
         words = line.split()
         pieces = words[5].split(":")[0]
+        # idiom: retrieve, create, and update counter
         counts[pieces] = counts.get(pieces, 0) + 1
 
 lst = list()       
