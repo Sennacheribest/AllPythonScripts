@@ -9,7 +9,7 @@ fname = input("Enter a file: ")
 """This line is for lazy SysAdmins like me."""
 if len(fname) < 1: fname = "mbox-short.txt"
 
-"""Open given file with try-except method."""  
+"""Open given file."""  
 fhand = open(fname)
 
 """Prepare an empty list to gather the required data."""
@@ -17,13 +17,13 @@ numlist = list()
 
 """Read through the file line by line."""
 for line in fhand:
-    """Get rid of (\n) at each end of line."""
+    """Get rid of (\n) at the end of each line."""
     line = line.rstrip()
     """Apply regular experssion pattern to extrac the required data from each line."""
     stuff = re.findall("^X-DSPAM-Confidence: ([0-9.]+)", line)
     """Do sanity check to ignore any retured empty value."""
     if len(stuff) < 1: continue
-    """Convert the returend string values into float one."""
+    """Convert the returend from string values into float one."""
     num = float(stuff[0])
     """Data analysis and methods."""
     numlist.append(num)
