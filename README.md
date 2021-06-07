@@ -1,2 +1,2 @@
-# All Python Scripts I've Wrote
-This inventory were created to store all of my code that I have tried or encountered during my Python journey to mastery.
+# All Python Scripts
+This inventory was created to store all of my code that I wrote or encountered during my journey to #Python Mastery.
